@@ -85,7 +85,7 @@ const stations = [
     title: "Area53 Frühschoppen mit der Gitti",
     intro: "Von März bis Juli war es dann ruhig... kein einziges Foto in den Akten. Es war eine stressige Zeit und ab und zu für euch beide schwer, aber ihr habt das super gemeistert und werdet noch viel mehr zusammen bewältigen können.",
     photos: [
-      { src: "assets/images/s7-1.jpg", cap: "Backstage bei Area53, mit da Gitti höchstpersönlich. Wir san so premium hehe" }
+      { src: "assets/images/s7-1.jpg", cap: "Backstage bei da Gitti höchstpersönlich. Wir san so premium hehe" }
     ],
     challenge: { type: "hearts", count: 16, final: true, hint: "Sammle 16 Herzen, um den Brief freizuschalten." }
   }
@@ -140,6 +140,7 @@ function flipNavigate(hideId, showId, direction, midCallback){
     hideEl.classList.remove('active', outClass);
     showEl.classList.add('active', inClass);
     if(midCallback) midCallback();
+    showEl.scrollTop = 0;
     window.scrollTo({top:0, behavior:'instant'});
     setTimeout(() => showEl.classList.remove(inClass), 320);
   }, 300);
