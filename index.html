@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <title>Robsis Erinnerungs-Archiv // Jahr 3</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@500;600;700&family=Space+Mono:wght@400;700&family=Nunito:ital,wght@0,400;0,600;0,700;1,600&family=Caveat:wght@600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div id="confetti-layer"></div>
+<div id="white-fade"></div>
+
+<!-- LANDING / ALBUM COVER -->
+<section id="screen-landing" class="screen active">
+  <div class="album-cover" id="album-cover">
+    <div class="cover-ribbon"></div>
+    <div class="cover-heart">♥</div>
+    <h1 class="cover-names">Jan <span class="plus">+</span> Lizi <span class="cover-heart-inline">&lt;3</span></h1>
+    <p class="cover-sub">3 Jahre zusammen...</p>
+    <button class="btn-primary cover-btn" id="btn-start">Album öffnen</button>
+  </div>
+</section>
+
+<!-- MAP (first page inside the album) -->
+<section id="screen-map" class="screen">
+  <div class="album-page">
+    <header class="map-header">
+      <div class="mini-robot" aria-hidden="true"><div class="mini-eye left"></div><div class="mini-eye right"></div></div>
+      <div class="progress-pill"><span id="progress-count">0</span>/<span id="progress-total">7</span> Erinnerungen</div>
+    </header>
+
+    <div class="robsi-comment intro-note">
+      <div class="speech-bubble small">
+        <p class="eyebrow">SYSTEM BOOT ERFOLGREICH</p>
+        <p>Hallo! Ich bin <b>Robsi</b>, dein Foto-Guide. Jede Erinnerung hier drin ist ein Post-it &ndash; tipp eines an, um weiterzublättern. Eins nach dem anderen, keine Abkürzungen.</p>
+      </div>
+    </div>
+
+    <h2 class="map-title">Eure Erinnerungen</h2>
+    <div class="postit-grid" id="nodes-container"></div>
+  </div>
+</section>
+
+<!-- CHAPTER OVERLAY (photos + challenge live on the same album page) -->
+<section id="screen-chapter" class="screen overlay">
+  <div class="album-page">
+    <button class="btn-back" id="btn-back">← zurück</button>
+    <div class="chapter-inner">
+      <div class="chapter-head">
+        <p class="eyebrow" id="chapter-date"></p>
+        <h2 id="chapter-title"></h2>
+      </div>
+
+      <div class="robsi-comment">
+        <div class="mini-robot static"><div class="mini-eye left"></div><div class="mini-eye right"></div></div>
+        <div class="speech-bubble small"><p id="chapter-intro"></p></div>
+      </div>
+
+      <div class="gallery" id="chapter-gallery"></div>
+
+      <div class="challenge-zone" id="challenge-zone" style="display:none">
+        <p class="eyebrow">FREISCHALT-CHALLENGE</p>
+        <p class="lead challenge-lead" id="challenge-hint-text"></p>
+        <div class="challenge-stage" id="challenge-stage"></div>
+      </div>
+
+      <button class="btn-primary" id="btn-collect">Weiter ✓</button>
+    </div>
+  </div>
+</section>
+
+<!-- FINAL -->
+<section id="screen-final" class="screen overlay">
+  <div class="album-page">
+    <div class="final-inner">
+      <div class="robot big small-final">
+        <div class="antenna"><span class="antenna-tip"></span></div>
+        <div class="rob-head">
+          <div class="rob-face heart-eyes">
+            <div class="eye left"></div><div class="eye right"></div>
+            <div class="mouth smile"></div>
+          </div>
+        </div>
+        <div class="rob-body"><div class="rob-light"></div></div>
+      </div>
+      <p class="eyebrow">LOG-EINTRAG // JAHR 3 ABGESCHLOSSEN</p>
+      <h2>Das sieht doch nach einem<br>erfolgreichen 3. Jahr aus.</h2>
+      <div class="envelope-flap"></div>
+      <div class="letter">
+        <span class="wax-seal">♥</span>
+        <p>Vü erlebt und vü gelacht, aber auch unterstützt und zusammen gewachsen. Hoffentlich werden uns no viele weitere Jahre gemeinsam viele schöne Momente bescheren.</p>
+        <p>Keiner von uns is perfekt, aber jeder Moment, den wir zusammen verbringan und erleben, fühlt si für mi perfekt an. Egal ob lustig, traurig, stressig oder angespannt. Ois, wos i mit dir bisher erleben durfte und no erleben werde, macht mi zum glücklichsten Menschen der Welt.</p>
+        <p class="signoff">I hob di unendlich lieb, Schatzi! <span class="heart">♥</span></p>
+        <p class="letter-signature">dei Lizi &lt;3</p>
+      </div>
+      <button class="btn-primary ghost" id="btn-restart">Album schließen &amp; neu beginnen</button>
+    </div>
+  </div>
+</section>
+
+
+<script src="script.js"></script>
+</body>
+</html>
