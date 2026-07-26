@@ -8,7 +8,7 @@ const stations = [
     intro: "Die große Herausforderung: Einen Vollblutsteirer sanft an das niederösterreichische Flachland gewöhnen. Testgelände: Horn, mit Familie Lösch. Robsi hat mitprotokolliert.",
     photos: [
       { src: "assets/images/s1-1.jpg", cap: "Supermotiviert wurde das noch ungewohnte Flachland gleich bei der ersten Reisepause begutachtet." },
-      { src: "assets/images/s1-2.jpg", cap: "Zimmerinspektion durch Meisterkritiker und Chefinspektor Jan höchstpersönlich – sogar die Unterlagen wurden kontrolliert. <b>Das Pentagon im Waschbecken und die Bibeln im Schrank</b> deuteten stark auf Dämonenbefall hin. Punkteabzug." },
+      { src: "assets/images/s1-2.jpg", cap: "Zimmerinspektion durch Meisterkritiker und Chefinspektor Moitzi höchstpersönlich – sogar die Unterlagen wurden kontrolliert. <b>Das Pentagon im Waschbecken und die Bibeln im Schrank</b> deuteten stark auf Dämonenbefall hin. Punkteabzug." },
       { src: "assets/images/s1-3.jpg", cap: "Weiterreise zum Stausee, mit voller Begeisterung von beiden Seiten..." },
       { src: "assets/images/s1-4.jpg", cap: "Spaß und Sport am See. Einfach... toll." }
     ],
